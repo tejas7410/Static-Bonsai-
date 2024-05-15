@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.home-container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+}
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.user-login ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  justify-content: space-between;
+}
+.title {
+  font-size: 50px;
+  color: green;
+  text-shadow: 2px 2px brown;
+  opacity: 0.7;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.login-btn a {
+  color: #00b289;
+  border: 1px solid #4c4d5f;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.start-btn a {
+  text-decoration: none;
+  background-color: #00b289;
+  color: white;
+  border: 1px solid #4c4d5f;
+  padding: 10px;
+  font-weight: 700;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: white;
+  font-size: 16px;
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  padding: 10px;
+}
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);
+}
+.dropbtn i {
+  padding: 0px 0px 5px 10px;
+}
+
+/* <---------------------------------------------------------------------------------------------------------------------------------------------------------> */
+.main {
+  padding-top: 150px;
+  width: 80%;
+  margin: auto;
+}
+.pricing-offers {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  background-color: #00b289;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.title-left {
+  font-size: 40px;
+}
+.title-right {
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  vertical-align: auto;
+}
+.title-translate {
+  translate: -100px -40px;
+}
+.title-right p i {
+  translate: 0px -10px;
+}
+.pricing-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+.pricing-offer {
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  width: 45%;
+  background-color: aliceblue;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.137);
+}
+.offer-title {
+  font-size: 24px;
+  padding: 10px;
+}
+.offer-price span {
+  font-size: 50px;
+  padding: 20px;
+}
+hr {
+  margin: 50px 0px;
+}
+.pricing-options hr {
+  color: #00b289;
+  height: 4px;
+  background-color: #00b289;
+}
+.pricing-options ul {
+  list-style-type: none;
+}
+.pricing-options ul li i {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.offer-link {
+  text-align: center;
+  background-color: #00b289;
+  width: 100%;
+  padding: 10px;
+}
+.offer-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.offer-info {
+  padding: 5px 100px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  background-color: #00b289;
+  position: absolute;
+  right: -105px;
+  top: 50px;
+  transform: rotate(45deg);
+}
+
+/* <----------------ADD-ONS--------------------------------> */
+.add-on {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.add-on-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+}
+.add-on-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 10px 10px 10px 10px #4c4d5f0c;
+  width: 70%;
+  margin: auto;
+}
+.add-on-offer div {
+  font-size: 24px;
+  font-weight: 500;
+}
+.add-on-price div {
+  font-size: 30px;
+}
+.add-on-offer p i {
+  padding: 0px 5px;
+}
+
+.box {
+  width: 70%;
+  margin: auto;
+  padding: 100px 40px;
+  background-color: #a6d4fa1f;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.box span {
+  float: right;
+}
+.box span a {
+  text-decoration: none;
+  background-color: #00b289;
+  padding: 20px 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* <-----------------------------------------------> */
+.question-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.question-dropbtn {
+  background-color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+.question-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.question-dropdown-content a {
+  color: black;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+}
+.question-dropdown:hover .question-dropdown-content {
+  display: block;
+}
+.question-dropdown:hover .question-dropbtn {
+  padding: 10px;
+}
+.question-dropbtn i {
+  padding: 0px 0px 5px 10px;
+}
+.question-title {
+  width: 70%;
+  margin: auto;
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+  color: #00b289;
+}
+.questions ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.questions ul li {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+/* <-------------------------------------------------------------------> */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.row-title {
+  font-weight: 700;
+  color: #00b289;
+  font-size: 20px;
+  padding: 20px;
+}
+.row-content ul {
+  list-style-type: none;
+}
+.row-content ul li {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
